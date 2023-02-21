@@ -24,64 +24,46 @@ Ahora, para subir un proyecto local a tu repositorio de GitHub ya creado, deber�
 'git init'
 Eso permite
 
- 
-
-2. Se habrá creado la carpeta .git con la información del proyecto. Añade los ficheros para subir el mismo con este comando: 
-
- 
-
-git add 
-
- 
-
-Otra forma de añadir un único fichero es introduciendo el comando siguiente: 
-
- 
-
-git add nombrdelfichero 
-
- 
-
-3. Prepara los ficheros que quieres subir con una pequeña explicación acerca de los cambios: 
-
- 
-
-git commit -m “Creado el proyecto inicial” 
-
- 
-
-4. Debes subir los cambios a GitHub. Para ello tienes que saber la ruta del repositorio (acabada en .git) que está en Clone or Download, el botón verde de la página del proyecto. Luego añade el repositorio desde la terminal con este comando: 
-
- 
-
-git remote add origin URLrepositorio.git 
-
- 
-
-5. Sube los cambios con el siguiente comando: 
-
- 
-
-git push origin master 
 
 
-
-1. git init
+2. Debes subir los cambios a GitHub. Para ello tienes que saber la ruta del repositorio (acabada en .git) que está en Clone or Download, el botón verde de la página del proyecto. Luego añade el repositorio desde la terminal con este comando:
 
 git remote add origin "URL repo"
 
-git status
 
-git fetch origin main
 
-git pull origin main
+3. git status
 
-git status
+
+
+4. git fetch origin main
+
+
+
+5. git pull origin main
+
+
+
+6. git status
+
+
+
+7. Se habrá creado la carpeta .git con la información del proyecto. Añade los ficheros para subir el mismo con este comando:
 
 git add .
 
-git status
+
+
+8. git status
+
+
+
+9. Prepara los ficheros que quieres subir con una pequeña explicación acerca de los cambios:
 
 git commit -m "Fist Commit"
+
+
+
+10. Sube los cambios con el siguiente comando:
 
 git push -u origin main
